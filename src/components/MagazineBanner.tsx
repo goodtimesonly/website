@@ -19,7 +19,7 @@ export default function MagazineBanner() {
         >
           <img
             src={magazineImage}
-            alt="Good Times Only Magazine - Issue 04: Nostalgia"
+            alt="Pablo Rios with Good Times Only magazine zine"
             className="w-full h-auto min-h-[360px] md:min-h-[540px] lg:min-h-[640px] xl:min-h-[720px] object-cover transition-transform duration-1000 group-hover:scale-[1.01]"
             referrerPolicy="no-referrer"
             id="magazine-main-img"
@@ -54,7 +54,7 @@ export default function MagazineBanner() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="hidden md:flex absolute right-6 lg:right-12 xl:right-16 top-1/2 -translate-y-1/2 w-[310px] lg:w-[370px] xl:w-[410px] text-white flex-col gap-4 text-left z-20 pointer-events-auto bg-[#0E0E0E]/80 backdrop-blur-md p-6 lg:p-8 rounded-sm border border-white/15 shadow-2xl h-auto"
+            className="hidden md:flex absolute right-6 lg:left-auto lg:right-12 xl:right-16 top-1/2 -translate-y-1/2 w-[310px] lg:w-[370px] xl:w-[410px] text-white flex-col gap-4 text-left z-20 pointer-events-auto bg-[#0E0E0E]/80 backdrop-blur-md p-6 lg:p-8 rounded-sm border border-white/15 shadow-2xl h-auto"
             id="magazine-overlay-right"
           >
             <div className="space-y-3">
@@ -79,11 +79,9 @@ export default function MagazineBanner() {
             viewport={{ once: true }}
             className="space-y-3 text-left p-6 bg-white border border-black/10 rounded-sm shadow-sm"
           >
-            <div className="space-y-1">
-              <h3 className="font-serif text-2xl font-medium tracking-tight text-[#111111]">
-                The Concept
-              </h3>
-            </div>
+            <h3 className="font-serif text-2xl font-medium tracking-tight text-[#111111]">
+              The Concept
+            </h3>
             
             <p className="text-sm sm:text-base text-neutral-700 leading-relaxed font-normal font-sans">
               Getting my work in front of a new audience far from home pushed me to create this zine and put together an exhibition featuring the photos that have shaped a big part of my journey as a photographer.
@@ -97,11 +95,9 @@ export default function MagazineBanner() {
             viewport={{ once: true }}
             className="space-y-3 text-left p-6 bg-white border border-black/10 rounded-sm shadow-sm"
           >
-            <div className="space-y-1">
-              <h3 className="font-serif text-2xl font-medium tracking-tight text-[#111111]">
-                Issue #1
-              </h3>
-            </div>
+            <h3 className="font-serif text-2xl font-medium tracking-tight text-[#111111]">
+              Issue #1
+            </h3>
             
             <p className="text-sm sm:text-base text-neutral-700 leading-relaxed font-normal font-sans">
               A limited run of 50 zines, born from weeks spent diving back through years behind the camera. I curated hundreds of images, wrote every word by hand, laid it all out on my wall before bringing it to life on my computer.

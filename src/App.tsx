@@ -37,9 +37,13 @@ export default function App() {
   }, [activeTab]);
 
   const scrollToSection = (sectionId: string) => {
+    if (sectionId === 'inicio') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
     const el = document.getElementById(sectionId);
     if (el) {
-      const yOffset = -70; 
+      const yOffset = -90; 
       const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
       window.scrollTo({ top: y, behavior: 'smooth' });
     } else {

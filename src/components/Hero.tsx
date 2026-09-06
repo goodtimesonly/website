@@ -48,12 +48,12 @@ export default function Hero({ onScrollToExplore, onNavigate }: HeroProps) {
   return (
     <section
       id="inicio"
-      className="min-h-screen pt-28 sm:pt-32 md:pt-36 lg:pt-40 pb-16 sm:pb-20 flex items-center justify-center relative overflow-hidden px-4 sm:px-8 md:px-12 lg:px-16 bg-transparent"
+      className="min-h-screen pt-36 sm:pt-40 md:pt-44 lg:pt-48 pb-16 sm:pb-20 flex flex-col justify-center relative overflow-hidden px-4 sm:px-8 md:px-12 lg:px-16 bg-transparent scroll-mt-28"
     >
-      <div className="max-w-7xl xl:max-w-[1700px] mx-auto w-full relative z-10 my-auto">
+      <div className="max-w-7xl xl:max-w-[1700px] mx-auto w-full relative z-10">
         
         {/* Balanced 50/50 layout: Left half centered text, Right half centered photo */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-16 xl:gap-20 items-center justify-center min-h-[500px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-16 xl:gap-20 items-center justify-center min-h-[450px]">
           
           {/* Left Half: Typewriter text header & bio centered */}
           <motion.div

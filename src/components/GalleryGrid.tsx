@@ -217,25 +217,6 @@ export default function GalleryGrid() {
                 </button>
               </div>
 
-              {/* Mobile Navigation Controls Bar */}
-              <div className="mt-4 flex items-center justify-between gap-3">
-                <button
-                  onClick={handleMobilePrev}
-                  className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 px-4 bg-white border border-black/15 text-xs font-mono uppercase tracking-widest text-[#111111] active:bg-neutral-100 shadow-xs"
-                >
-                  <ChevronLeft size={16} />
-                  <span>Anterior</span>
-                </button>
-
-                <button
-                  onClick={handleMobileNext}
-                  className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 px-4 bg-[#111111] text-xs font-mono uppercase tracking-widest text-[#FBFBFA] active:bg-neutral-800 shadow-md"
-                >
-                  <span>Siguiente</span>
-                  <ChevronRight size={16} />
-                </button>
-              </div>
-
               {/* Progress bar */}
               <div className="mt-3 w-full bg-neutral-200 h-1 rounded-full overflow-hidden">
                 <div 

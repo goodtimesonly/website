@@ -149,52 +149,51 @@ export default function Navbar({ onNavigate, activeTab }: NavbarProps) {
         </div>
       </div>
 
-      {/* Mobile Drawer menu */}
+      {/* Mobile Dropdown menu */}
       {isOpen && (
         <div
-          id="mobile-drawer"
-          className={`md:hidden fixed inset-x-0 bottom-0 z-40 px-8 py-12 flex flex-col justify-between border-t border-white/10 bg-black/90 backdrop-blur-xl shadow-2xl transition-all duration-500 ${
-            isScrolled ? 'top-[58px]' : 'top-[78px]'
-          }`}
+          id="mobile-dropdown"
+          className="md:hidden absolute top-full left-0 right-0 bg-black/80 backdrop-blur-md border-b border-white/10 shadow-2xl px-6 py-4 transition-all duration-200"
         >
-          <nav className="flex flex-col space-y-6" id="mobile-menu-items">
-            {menuItems.map((item, idx) => (
+          <nav className="flex flex-col space-y-1" id="mobile-menu-items">
+            {menuItems.map((item) => (
               <button
                 key={item.target}
                 onClick={() => handleLinkClick(item.target)}
-                className="text-left text-2xl font-serif tracking-wider uppercase text-white hover:translate-x-2 transition-transform duration-300 py-2 border-b border-neutral-800"
+                className={`w-full text-left text-xs uppercase tracking-[0.2em] font-medium py-2.5 px-3 rounded-sm transition-all duration-200 flex items-center justify-between cursor-pointer ${
+                  activeSection === item.target
+                    ? 'text-white bg-white/10 font-semibold'
+                    : 'text-neutral-300 hover:text-white hover:bg-white/5'
+                }`}
               >
-                <span className="text-xs font-mono text-neutral-500 mr-4 font-normal">0{idx + 1}</span>
-                {item.label}
+                <span>{item.label}</span>
+                {activeSection === item.target && (
+                  <span className="w-1.5 h-1.5 rounded-full bg-white" />
+                )}
               </button>
             ))}
           </nav>
 
-          <div className="space-y-6">
-            <p className="text-xs uppercase tracking-widest text-neutral-400">GTO Studio • Pablo Rios</p>
-            <div className="flex space-x-8 items-center">
-              <a
-                href="https://www.instagram.com/pabloorioos/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center space-x-3 text-base text-neutral-300 hover:text-white transition-colors"
-                id="mobile-instagram-link"
-              >
-                <Instagram size={22} strokeWidth={1.8} />
-                <span>Instagram</span>
-              </a>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center space-x-3 text-base text-neutral-300 hover:text-white transition-colors"
-                id="mobile-youtube-link"
-              >
-                <Youtube size={22} strokeWidth={1.8} />
-                <span>YouTube</span>
-              </a>
-            </div>
-            <p className="text-[11px] text-neutral-500 font-mono">info@gtimesonly.com</p>
+          {/* Bottom compact social bar */}
+          <div className="pt-3 mt-2 border-t border-white/10 flex items-center space-x-4 text-neutral-400">
+            <a
+              href="https://www.instagram.com/pabloorioos/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-300 hover:text-white transition-colors p-1"
+              aria-label="Instagram"
+            >
+              <Instagram size={18} strokeWidth={1.8} />
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-300 hover:text-white transition-colors p-1"
+              aria-label="YouTube"
+            >
+              <Youtube size={18} strokeWidth={1.8} />
+            </a>
           </div>
         </div>
       )}
