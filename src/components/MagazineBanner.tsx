@@ -39,9 +39,6 @@ export default function MagazineBanner() {
             id="magazine-overlay-left"
           >
             <div className="space-y-3">
-              <span className="font-mono text-xs tracking-[0.25em] uppercase text-red-300 font-semibold block">
-                CONCEPT & SOUL
-              </span>
               <h3 className="font-serif text-2xl lg:text-3xl font-medium tracking-tight text-white">
                 The Concept
               </h3>
@@ -61,9 +58,6 @@ export default function MagazineBanner() {
             id="magazine-overlay-right"
           >
             <div className="space-y-3">
-              <span className="font-mono text-xs tracking-[0.25em] uppercase text-red-300 font-semibold block">
-                INFO & SOUL
-              </span>
               <h3 className="font-serif text-2xl lg:text-3xl font-medium tracking-tight text-white">
                 Issue #1
               </h3>
