@@ -1,0 +1,6 @@
+{
+  "name": "Good Times Only",
+  "description": "Sitio web moderno, minimalista y responsive para la marca de fotógrafo y videógrafo freelancer Good Times Only.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
