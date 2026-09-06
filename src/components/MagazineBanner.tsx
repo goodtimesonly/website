@@ -86,9 +86,6 @@ export default function MagazineBanner() {
             className="space-y-3 text-left p-6 bg-white border border-black/10 rounded-sm shadow-sm"
           >
             <div className="space-y-1">
-              <span className="font-mono text-xs tracking-[0.25em] uppercase text-red-800 font-semibold block">
-                CONCEPT & SOUL
-              </span>
               <h3 className="font-serif text-2xl font-medium tracking-tight text-[#111111]">
                 The Concept
               </h3>
@@ -107,9 +104,6 @@ export default function MagazineBanner() {
             className="space-y-3 text-left p-6 bg-white border border-black/10 rounded-sm shadow-sm"
           >
             <div className="space-y-1">
-              <span className="font-mono text-xs tracking-[0.25em] uppercase text-red-800 font-semibold block">
-                INFO & SOUL
-              </span>
               <h3 className="font-serif text-2xl font-medium tracking-tight text-[#111111]">
                 Issue #1
               </h3>
