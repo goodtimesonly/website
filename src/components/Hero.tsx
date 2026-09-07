@@ -52,15 +52,15 @@ export default function Hero({ onScrollToExplore, onNavigate }: HeroProps) {
     >
       <div className="max-w-7xl xl:max-w-[1700px] mx-auto w-full relative z-10">
         
-        {/* Balanced 50/50 layout: Left half centered text, Right half centered photo */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-16 xl:gap-20 items-center justify-center min-h-[450px]">
+        {/* Balanced layout: Left column centered text with adequate width for 3 lines, Right column centered photo */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-16 items-center justify-center min-h-[450px]">
           
-          {/* Left Half: Typewriter text header & bio centered */}
+          {/* Left: Typewriter text header & bio centered */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col justify-center items-center text-center px-4 sm:px-6 md:px-8 lg:px-12 w-full"
+            className="lg:col-span-7 flex flex-col justify-center items-center text-center px-2 sm:px-4 w-full"
             id="hero-floating-text-container"
           >
             <h1 className="font-serif text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl font-normal leading-[1.18] text-neutral-800 tracking-normal select-none relative break-words text-center">
@@ -68,26 +68,32 @@ export default function Hero({ onScrollToExplore, onNavigate }: HeroProps) {
               <span className="inline-block w-[2px] sm:w-[2.5px] h-[0.85em] bg-neutral-700 ml-2 animate-blink align-middle" />
             </h1>
 
-            {/* Description text - structured in the requested 3 distinct lines (renglones) */}
-            <div className="mt-6 sm:mt-8 space-y-3 sm:space-y-4 text-neutral-700 font-light text-sm sm:text-base md:text-[15px] lg:text-[17px] xl:text-lg leading-relaxed sm:leading-[1.7] w-full max-w-xl lg:max-w-2xl xl:max-w-3xl text-center">
+            {/* Description text - structured strictly in 3 distinct lines (renglones) */}
+            <div className="mt-6 sm:mt-8 space-y-3 sm:space-y-4 text-neutral-700 font-light text-xs sm:text-sm md:text-[15px] lg:text-[15.5px] xl:text-[16.5px] leading-relaxed sm:leading-[1.75] w-full max-w-2xl lg:max-w-3xl text-center">
               <p className="space-y-1 sm:space-y-1.5">
-                <span className="block">Good Times Only was born out of all the years I’ve spent behind the camera,</span>
-                <span className="block">the places I’ve been to, the people I’ve met, and all the experiences</span>
-                <span className="block">that have shaped the way I document and approach my work.</span>
+                <span className="block sm:whitespace-nowrap">
+                  Good Times Only was born out of all the years I’ve spent behind the camera,
+                </span>
+                <span className="block sm:whitespace-nowrap">
+                  the places I’ve been to, the people I’ve met, and all the experiences
+                </span>
+                <span className="block sm:whitespace-nowrap">
+                  that have shaped the way I document and approach my work.
+                </span>
               </p>
 
-              <p className="text-neutral-900 font-medium pt-2 sm:pt-3 text-sm sm:text-base md:text-[15px] lg:text-[17px] xl:text-lg">
+              <p className="text-neutral-900 font-medium pt-2 sm:pt-3 text-xs sm:text-sm md:text-[15px] lg:text-base">
                 I shoot 35mm film, digital, and video.
               </p>
             </div>
           </motion.div>
  
-          {/* Right Half: Portrait frame centered */}
+          {/* Right: Portrait frame centered */}
           <motion.div
             initial={{ opacity: 0, scale: 0.97, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
-            className="flex justify-center items-center pointer-events-auto z-10 w-full px-2 sm:px-4 md:px-6 lg:px-8"
+            className="lg:col-span-5 flex justify-center items-center pointer-events-auto z-10 w-full px-2 sm:px-4"
             id="photographer-portrait-container"
           >
             {/* Portrait display: uncropped original aspect ratio with black border */}
