@@ -48,7 +48,7 @@ export default function Hero({ onScrollToExplore, onNavigate }: HeroProps) {
   return (
     <section
       id="inicio"
-      className="min-h-screen pt-36 sm:pt-40 md:pt-44 lg:pt-48 pb-16 sm:pb-20 flex flex-col justify-center relative overflow-hidden px-4 sm:px-8 md:px-12 lg:px-16 bg-transparent scroll-mt-28"
+      className="min-h-screen pt-40 sm:pt-44 md:pt-48 lg:pt-52 xl:pt-56 pb-16 sm:pb-20 flex flex-col justify-center relative overflow-hidden px-4 sm:px-8 md:px-12 lg:px-16 bg-transparent scroll-mt-28"
     >
       <div className="max-w-7xl xl:max-w-[1700px] mx-auto w-full relative z-10">
         
@@ -91,11 +91,11 @@ export default function Hero({ onScrollToExplore, onNavigate }: HeroProps) {
             id="photographer-portrait-container"
           >
             {/* Portrait display: uncropped original aspect ratio with black border */}
-            <div className="w-full max-w-lg sm:max-w-xl md:max-w-xl lg:max-w-2xl xl:max-w-[760px] relative group border-2 sm:border-[2.5px] border-[#111111] shadow-2xl overflow-hidden">
+            <div className="w-full max-w-sm sm:max-w-md md:max-w-md lg:max-w-lg xl:max-w-xl relative group border-2 sm:border-[2.5px] border-[#111111] shadow-2xl overflow-hidden">
               <img
                 src={portraitImage}
                 alt={`Portrait of ${PHOTOGRAPHER_INFO.name}`}
-                className="w-full h-auto object-contain block mx-auto"
+                className="w-full h-auto max-h-[58vh] md:max-h-[64vh] lg:max-h-[68vh] object-contain block mx-auto"
                 referrerPolicy="no-referrer"
                 id="portrait-image"
               />

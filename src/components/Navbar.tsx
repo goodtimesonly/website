@@ -70,7 +70,7 @@ export default function Navbar({ onNavigate, activeTab }: NavbarProps) {
     <header
       id="navbar-header"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-black/70 backdrop-blur-md border-b border-white/10 shadow-lg ${
-        isScrolled ? 'py-2 bg-black/80' : 'py-3 sm:py-4'
+        isScrolled ? 'py-1.5 sm:py-2 bg-black/80' : 'py-2.5 sm:py-3'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
@@ -85,8 +85,8 @@ export default function Navbar({ onNavigate, activeTab }: NavbarProps) {
             alt="Good Times Only"
             className={`w-auto object-contain brightness-0 invert transition-all duration-300 group-hover:scale-105 ${
               isScrolled
-                ? 'h-16 sm:h-20 md:h-24 max-h-[100px]'
-                : 'h-24 sm:h-32 md:h-40 lg:h-48 max-h-[200px]'
+                ? 'h-12 sm:h-14 md:h-16 lg:h-18 max-h-[80px]'
+                : 'h-16 sm:h-20 md:h-24 lg:h-28 max-h-[120px]'
             }`}
             referrerPolicy="no-referrer"
           />
