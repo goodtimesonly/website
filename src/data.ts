@@ -40,6 +40,7 @@ import photo_pablo_32 from './assets/images/_DSC9744.jpg';
 import photo_pablo_33 from './assets/images/4FA68DBE-4AAD-45B2-924E-AA41CF7AF007.jpg';
 import photo_pablo_34 from './assets/images/IMG_3829-1.PNG';
 import photo_pablo_35 from './assets/images/img110.jpg';
+import photo_javi from './assets/images/JAVI.jpg';
 
 // Aliases for legacy and print references
 const photo_dsc0706 = photo_pablo_29;
@@ -72,11 +73,23 @@ export const PHOTOGRAPHER_INFO = {
   ]
 };
 
-// Portfolio items populated with all 38 authentic photographic works
+// Portfolio items populated with authentic photographic works
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
-    id: "gto-frame-01",
+    id: "gto-frame-javi",
     title: "Frame 01",
+    category: "photography",
+    src: photo_javi,
+    isVideo: false,
+    aspect: "portrait",
+    location: "New Zealand",
+    date: "2026",
+    description: "35mm analog & editorial documentation.",
+    specs: "4492x6774 • Noritsu 35mm Scan"
+  },
+  {
+    id: "gto-frame-01",
+    title: "Frame 02",
     category: "photography",
     src: photo_pablo_01,
     isVideo: false,
